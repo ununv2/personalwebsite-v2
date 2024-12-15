@@ -5,7 +5,7 @@ import project2 from "../../../public/youtubeproject.png"
 import project3 from "../../../public/mcpfp.png"
 const projects = [
   { id: 1, title: "Data Science Project", description: "Chulalongkorn University (ISE) Data Science Project, analyze data from Scopus and Arxiv API, apply Machine Learning model, and make visualization with BI Dashboard", img: project1, link: 'https://github.com/KTAP8/Gopher_Yingyhai' },
-  { id: 2, title: "Youtube Channel", description: "Content Creator on Youtube, produced a variety of content types, including short-form videos, long-form content, and live streams", img: project2, link: 'https://www.youtube.com/@ununyy12' },
+  { id: 2, title: "Youtube Channel", description: "Content Creator on Youtube, produced a variety of content types, including short-form videos, long-form content, and live streams", img: project2, link: 'https://portfolio.unchasa.in.th/' },
   { id: 3, title: "Portfolio Website V1", description: "Version 1 portfolio website, written with NextJS, TailwindCSS, Typescript", img: project3, link: 'https://unchasa.in.th/' },
 ];
 
