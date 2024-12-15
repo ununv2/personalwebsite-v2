@@ -21,14 +21,14 @@ export default function Profile() {
         </div>
         {/* Title */}
         <div data-aos="fade-up" className="w-full flex justify-center mb-8">
-            <div className="font-extrabold text-center flex flex-col gap-1 md:gap-3">
+            <div className="font-extrabold text-center text-white flex flex-col gap-1 md:gap-3">
                 <h1 className="text-3xl md:text-4xl">Unchasa Chen's</h1>
                 <h1 className="text-xl md:text-4xl">Personal Portfolio Website</h1>
                 </div>
         </div>
         {/* Description */}
         <div data-aos="fade-up" className="w-full flex justify-center mb-12">
-            <div className="text-center font-thin max-w-[20rem] sm:max-w-[30rem] md:max-w-[40rem] text-[0.9em] sm:text-[1em] lg:text-[1.2em] text-pretty">
+            <div className="text-center text-white font-thin max-w-[20rem] sm:max-w-[30rem] md:max-w-[40rem] text-[0.9em] sm:text-[1em] lg:text-[1.2em] text-pretty">
                 <p>Hi! My name is Unun, and I'm a 2nd-year student studying Information and Communication Engineering (ICE) at Chulalongkorn University. Here, you'll find more about me, my experiences, my current projects, and much more!</p>
                 </div>
         </div>

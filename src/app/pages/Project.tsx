@@ -5,14 +5,14 @@ import project2 from "../../../public/youtubeproject.png"
 import project3 from "../../../public/mcpfp.png"
 const projects = [
   { id: 1, title: "Data Science Project", description: "Chulalongkorn University (ISE) Data Science Project, analyze data from Scopus and Arxiv API, apply Machine Learning model, and make visualization with BI Dashboard", img: project1, link: 'https://github.com/KTAP8/Gopher_Yingyhai' },
-  { id: 2, title: "Youtube Channel", description: "Content Creator on Youtube, produced a variety of content types, including short-form videos, long-form content, and live streams", img: project2, link: 'https://portfolio.unchasa.in.th/' },
-  { id: 3, title: "Portfolio Website V1", description: "Version 1 portfolio website, written with NextJS, TailwindCSS, Typescript", img: project3, link: 'https://unchasa.in.th/' },
+  { id: 2, title: "Youtube Channel", description: "Content Creator on Youtube, produced a variety of content types, including short-form videos, long-form content, and live streams", img: project2, link: 'https://www.youtube.com/@ununyy12' },
+  { id: 3, title: "Portfolio Website V1", description: "Version 1 portfolio website, written with NextJS, TailwindCSS, Typescript", img: project3, link: 'https://portfolio.unchasa.in.th/' },
 ];
 
 export default function Project() {
   return (
 
-    <div id="project" className='w-screen h-screen z-50 bg-cover bg-center' style={{ backgroundImage:`url('/bg3.png')` }}>
+    <div id="project" className='w-screen min-h-screen z-50 bg-cover bg-center' style={{ backgroundImage:`url('/bg3.png')` }}>
       {/* Title */}
         <div data-aos="fade-up" className='w-full pt-12 sm:pt-20 sm:mb-15'>
           <h2 className="flex items-center justify-center text-2xl md:text-3xl font-bold text-white mb-5 sm:mb-10 md:mb-16">
