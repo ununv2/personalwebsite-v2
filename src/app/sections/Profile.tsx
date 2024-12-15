@@ -9,7 +9,7 @@ import { FaHtml5 } from "react-icons/fa";
 
 export default function Profile() {
   return (
-    <div className="w-screen h-screen z-50">
+    <div className="w-screen h-screen z-50 bg-cover bg-center" style={{ backgroundImage:`url('/bg2.png')` }}>
     <div className='w-full h-full justify-center py-10 sm:py-20 -translate-y-2 md:-translate-y-5'>
         <div className="w-full flex justify-center mb-8">
             <Image
