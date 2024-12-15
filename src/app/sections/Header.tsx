@@ -50,7 +50,7 @@ export default function Header() {
   return (
     <div className="w-screen text-lg z-30">
         <div className="w-full bg-[#222222] h-[9vh] flex justify-center">
-            <div className="flex items-center justify-between px-16 md:px-0 max-w-[800px] w-full">
+            <div data-aos="fade-down" className="flex items-center justify-between px-16 md:px-0 max-w-[800px] w-full">
                 <Image
                     className="rounded-lg size-[2.3em] md:size-[3em]"
                     src={mcpfp}

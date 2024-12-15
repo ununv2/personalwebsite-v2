@@ -1,17 +1,23 @@
+"use client"
 import Image from "next/image";
-import Header from "./sections/Header";
-import Profile from "./sections/Profile";
-import Project from "./sections/Project";
+import Homepage from "./pages/homepage"
+import Project from "./pages/Project";
+import Footer from "./sections/Footer";
+import AOS from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
   return (
     <div className="">
-      <Header/>
-      <div className="min-h-screen h-full">
-        <Profile/>
-      </div>
-      <div className="min-h-screen h-full bg-orange-500/20">
+        <Homepage/>
         <Project/>
-      </div>
+       
     </div>
   );
 }

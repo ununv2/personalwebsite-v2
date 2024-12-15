@@ -9,31 +9,36 @@ import { FaHtml5 } from "react-icons/fa";
 
 export default function Profile() {
   return (
-    <div className="w-screen h-screen z-50 bg-cover bg-center" style={{ backgroundImage:`url('/bg2.png')` }}>
-    <div className='w-full h-full justify-center py-10 sm:py-20 -translate-y-2 md:-translate-y-5'>
-        <div className="w-full flex justify-center mb-8">
+    <div className="w-screen z-50 bg-cover bg-center" style={{ backgroundImage:`url('/bg2.png')` }}>
+    <div className='w-full justify-center py-10 sm:py-20 translate-y-2 md:-translate-y-2'>
+        {/* Profile Pic */}
+        <div data-aos="zoom-in" className="w-full flex justify-center mb-8">
             <Image
                 className="rounded-full size-40 md:size-52"
                 src={profilepic}
                 alt="pfp"
             />
         </div>
-        <div className="w-full flex justify-center mb-8">
+        {/* Title */}
+        <div data-aos="fade-up" className="w-full flex justify-center mb-8">
             <div className="font-extrabold text-center flex flex-col gap-1 md:gap-3">
-                <h1 className="text-3xl md:text-4xl">Unchasa Chen</h1>
-                <h1 className="text-xl md:text-4xl">Portfolio Website EHHEHEHE</h1>
+                <h1 className="text-3xl md:text-4xl">Unchasa Chen's</h1>
+                <h1 className="text-xl md:text-4xl">Personal Portfolio Website</h1>
                 </div>
         </div>
-        <div className="w-full flex justify-center mb-12">
+        {/* Description */}
+        <div data-aos="fade-up" className="w-full flex justify-center mb-12">
             <div className="text-center font-thin max-w-[20rem] sm:max-w-[30rem] md:max-w-[40rem] text-[0.9em] sm:text-[1em] lg:text-[1.2em] text-pretty">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam voluptates accusantium consectetur velit, necessitatibus aliquid eaque repellat dolorum pariatur, atque illo minima quia fugit facilis ipsam. Molestiae enim dolorum veniam?</p>
                 </div>
         </div>
-        <div className="w-full flex justify-center gap-5 mb-16">
-            <button className="bg-white text-black sm:font-semibold py-3 px-4 sm:py-4 sm:px-5 rounded-full">Contact Me Pls</button>
-            <button className="border-white border-2 text-white sm:font-semibold py-3 px-5 sm:py-4 sm:px-6 rounded-full">Download CV</button>
+        {/* Buttons */}
+        <div data-aos="fade-up" className="w-full flex justify-center gap-5 mb-16">
+            <a href="https://github.com/ununv2" className="bg-white text-black hover:scale-105 transition duration-300 sm:font-semibold py-3 px-4 sm:py-4 sm:px-5 rounded-full">Github Profile</a>
+            <a href="/resume.pdf" download="resume.pdf" className="border-white border-2 text-white hover:scale-105 transition duration-300 sm:font-semibold py-3 px-5 sm:py-4 sm:px-6 rounded-full">Download CV</a>
         </div>
-        <div className="w-full flex justify-center">
+        {/* ICONS */}
+        <div data-aos="zoom-out-up" className="w-full flex justify-center">
             <div className="flex flex-col justify-center gap-5">
                 <p className="text-center">EXPERIENCE WITH</p>
                 <div className="flex gap-10">
