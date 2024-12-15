@@ -29,7 +29,7 @@ export default function Profile() {
         {/* Description */}
         <div data-aos="fade-up" className="w-full flex justify-center mb-12">
             <div className="text-center font-thin max-w-[20rem] sm:max-w-[30rem] md:max-w-[40rem] text-[0.9em] sm:text-[1em] lg:text-[1.2em] text-pretty">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam voluptates accusantium consectetur velit, necessitatibus aliquid eaque repellat dolorum pariatur, atque illo minima quia fugit facilis ipsam. Molestiae enim dolorum veniam?</p>
+                <p>Hi! My name is Unun, and I'm a 2nd-year student studying Information and Communication Engineering (ICE) at Chulalongkorn University. Here, you'll find more about me, my experiences, my current projects, and much more!</p>
                 </div>
         </div>
         {/* Buttons */}
