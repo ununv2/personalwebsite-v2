@@ -56,7 +56,7 @@ export default function Header() {
                     src={mcpfp}
                     alt="pfp"
                 />
-                <ul className="hidden md:flex flex-row space-x-16">
+                <ul className="hidden md:flex flex-row space-x-16 text-white">
                     {navLinks.map((link, index) => (
                         <li key={index}>
                             <Link href={link.path}>
