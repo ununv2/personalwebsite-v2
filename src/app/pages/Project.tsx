@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Image from 'next/image'
-import project1 from "../../../public/datasciproject.png"
-import project2 from "../../../public/youtubeproject.png"
-import project3 from "../../../public/mcpfp.png"
-const projects = [
-  { id: 1, title: "Data Science Project", description: "Chulalongkorn University (ISE) Data Science Project, analyze data from Scopus and Arxiv API, apply Machine Learning model, and make visualization with BI Dashboard", img: project1, link: 'https://github.com/KTAP8/Gopher_Yingyhai' },
-  { id: 2, title: "Youtube Channel", description: "Content Creator on Youtube, produced a variety of content types, including short-form videos, long-form content, and live streams", img: project2, link: 'https://www.youtube.com/@ununyy12' },
-  { id: 3, title: "Portfolio Website V1", description: "Version 1 portfolio website, written with NextJS, TailwindCSS, Typescript", img: project3, link: 'https://portfolio.unchasa.in.th/' },
-];
+
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  img: string;
+  link: string;
+}
 
 export default function Project() {
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    async function fetchProjects() {
+      const response = await fetch("/projects.json");
+      const data = await response.json();
+      setProjects(data);
+    }
+    fetchProjects();
+  }, []);
+
   return (
 
     <div id="project" className='w-screen min-h-screen z-50 bg-cover bg-center' style={{ backgroundImage:`url('/bg3.png')` }}>
@@ -29,7 +40,9 @@ export default function Project() {
             <div className='w-full md:h-[20em] overflow-hidden rounded-lg'>
               <Image className="w-full h-full object-fill" 
                 src={project.img} 
-                alt={project.title}/>
+                alt={project.title}
+                width="500"
+                height="500"/>
             </div>
             {/* Content */}
             <div className='p-2 pt-6 mb-12'>
