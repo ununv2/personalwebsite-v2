@@ -33,8 +33,8 @@ export default function Project() {
             </div>
             {/* Content */}
             <div className='p-2 pt-6 mb-12'>
-              <h3 className='text-xl font-bold mb-2'>{project.title}</h3>
-              <p className=''>{project.description}</p>
+              <h3 className='text-xl text-white font-bold mb-2'>{project.title}</h3>
+              <p className='text-white'>{project.description}</p>
             </div>
             {/* Button */}
             <div className='absolute bottom-6 left-4'>

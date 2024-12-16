@@ -82,7 +82,7 @@ export default function Header() {
             variants={menuVariants}
             className="left-0 top-0 w-full z-40 bg-[#1e1e1e]/100"
         >
-            <ul className="text-1xl font-semibold py-5 text-center space-y-6 flex flex-col justify-center items-center">
+            <ul className="text-1xl text-white font-semibold py-5 text-center space-y-6 flex flex-col justify-center items-center">
                 {navLinks.map((link, index) => (
                     <li key={index} className="border-b border-white pb-2 hover:border-b-2 hover:border-white transition-all w-[8em]">
                         <Link href={link.path} onClick={closeNav}>
