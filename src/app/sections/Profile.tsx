@@ -35,7 +35,7 @@ export default function Profile() {
         {/* Buttons */}
         <div data-aos="fade-up" className="w-full flex justify-center gap-5 mb-16">
             <a href="https://github.com/ununv2" className="bg-white text-black hover:scale-105 transition duration-300 sm:font-semibold py-3 px-4 sm:py-4 sm:px-5 rounded-full">Github Profile</a>
-            <a href="/resume.pdf" download="resume.pdf" className="border-white border-2 text-white hover:scale-105 transition duration-300 sm:font-semibold py-3 px-5 sm:py-4 sm:px-6 rounded-full">Download CV</a>
+            <a href="" download="" className="border-white border-2 text-white hover:scale-105 transition duration-300 sm:font-semibold py-3 px-5 sm:py-4 sm:px-6 rounded-full">Contact Me</a>
         </div>
         {/* ICONS */}
         <div data-aos="zoom-out-up" className="w-full flex justify-center">
